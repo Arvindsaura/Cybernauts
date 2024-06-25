@@ -1,0 +1,318 @@
+
+
+.events-title {
+    font-family: pristina;
+    color: white;
+    align-self: center;
+    font-size: 4rem;
+    margin-left: 25%;
+}
+
+.EVENT {
+    color: white;
+    font-size: 5rem;
+    margin-left: 25%;
+    margin-top: -10%;
+}
+
+.EVENT span {
+    color: rgb(249, 149, 0);
+    font-size: 15rem;
+    margin-top: -8%;
+    margin-left: 2%;
+    font-family: pristina;
+}
+
+.workshops {
+    color: rgb(244, 22, 192);
+    font-size: 5rem;
+    margin-left: 25%;
+    margin-top: -4%;
+}
+
+.workshops span {
+    color: white;
+    font-size: 5rem;
+    margin-top: -8%;
+    margin-left: 2%;
+    font-family: pristina;
+}
+
+.events_body {
+    background-color: #000000;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+    overflow: hidden;
+    box-shadow: inset white 220px;
+}
+
+.container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.date {
+    width: 7vw;
+    border: 2px solid green;
+    border-radius: 15px;
+    text-align: center;
+    text-justify: center;
+    margin-top: 1.5vh;
+    margin-bottom: 1vh;
+    box-shadow: 2px green;
+}
+
+.timeline:hover .container {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    animation-play-state: paused;
+}
+
+.text-box1,.text-box2,.text-box3,.text-box4,.text-box5,.text-box6 {
+    padding: 20px 30px;
+    height: 50vh;
+    color: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    background-image: url("f.png");
+    background-color: #1A1919;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.evebutton {
+    margin-top: 12vh;
+    width: 6vw;
+    border: 3px solid black;
+    height: 4vh;
+    border-radius: 15px;
+    font-size: 17px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-container {
+    left: 0;
+}
+
+.right-container {
+    left: 50%;
+}
+
+.container img {
+    position: relative;
+    width: 3vw;
+    border-radius: 50%;
+    left: 105%;
+    top: 9vh;
+    z-index: 10;
+}
+
+.right-container img {
+    left: -4.8vw;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 1200px) {
+    .timeline {
+        max-width: 900px;
+    }
+    .container {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .timeline {
+        max-width: 600px;
+    }
+    .container {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .timeline {
+        margin: 50px auto;
+    }
+    .timeline::after {
+        left: 31px;
+    }
+    .container {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .content {
+        margin-bottom: 10px;
+    }
+    .right-container {
+        left: 0;
+    }
+    .left-container img,.right-container img {
+        left: 10px;
+    }
+    .left-container-arrow,.right-container-arrow {
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -15px;
+    }
+    .container img {
+        background-image: url("3.png");
+        width: auto;
+        left: -18%;
+    }
+    .text-box1 {
+        box-shadow: 8px 8px 6px #A523B0, 13px 13px 6px green;
+    }
+    .text-box3 {
+        box-shadow: 8px 8px 6px #A523B0, 13px 13px 6px green;
+    }
+    .text-box5 {
+        box-shadow: 8px 8px 6px #A523B0, 13px 13px 6px green;
+    }
+    .text-box2 {
+        box-shadow: 8px 8px 6px #75187d, 13px 13px 6px #eb7130;
+    }
+    .text-box4 {
+        box-shadow: 8px 8px 6px #75187d, 13px 13px 6px #eb7130;
+    }
+    .text-box6 {
+        box-shadow: 8px 8px 6px #75187d, 13px 13px 6px #eb7130;
+    }
+    .evebutton {
+        width: 20vw;
+        text-align: center;
+        margin-top: 35px;
+    }
+    .date {
+        width: 19vw;
+    }
+    .events-title {
+        margin-top: 5%;
+        margin-left: 8%;
+    }
+    .EVENT {
+        font-size: 3.1rem;
+        margin-left: 8%;
+    }
+    .EVENT span {
+        font-size: 6.5rem;
+    }
+    .workshops {
+        font-size: 3.1rem;
+        margin-left: 8%;
+    }
+    .workshops span {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .timeline {
+        margin: 30px auto;
+    }
+    .container {
+        padding-left: 40px;
+        padding-right: 15px;
+    }
+    .content {
+        margin-bottom: 5px;
+    }
+    .evebutton {
+        width: 30vw;
+        margin-top: 25px;
+    }
+    .date {
+        width: 25vw;
+    }
+    .events-title {
+        margin-top: 3%;
+        margin-left: 5%;
+    }
+    .EVENT {
+        font-size: 2.5rem;
+        margin-left: 5%;
+    }
+    .EVENT span {
+        font-size: 5rem;
+    }
+    .workshops {
+        font-size: 2.5rem;
+        margin-left: 5%;
+    }
+    .workshops span {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .timeline {
+        margin: 20px auto;
+    }
+    .container {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .content {
+        margin-bottom: 2px;
+    }
+    .evebutton {
+        width: 40vw;
+        margin-top: 20px;
+    }
+    .date {
+        width: 30vw;
+    }
+    .events-title {
+        margin-top: 2%;
+        margin-left: 3%;
+    }
+    .EVENT {
+        font-size: 2rem;
+        margin-left: 3%;
+    }
+    .EVENT span {
+        font-size: 4rem;
+    }
+    .workshops {
+        font-size: 2rem;
+        margin-left: 3%;
+    }
+    .workshops span {
+        font-size: 2rem;
+    }
+}
